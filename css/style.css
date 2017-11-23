@@ -1,0 +1,20 @@
+h1{
+  font-style: oblique;
+  padding-left: 300px;
+  color: purple;
+  text-transform: capitalize;
+}
+
+#techstitution{
+  font-size: 20px;
+  font-style: italic;
+}
+
+#grupi{
+  font-weight: bold;
+}
+
+a{
+  color: red;
+  font-weight: bold;
+}
