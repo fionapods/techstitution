@@ -1,74 +1,123 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Techstitution</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
-  <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
-</head>
-<body>
-  <p id="techstitution" class="main">Techstitution</p>
-  <div class="container">
-    <h3>Forma e regjistrimit te pikave kufitare</h3>
-    <form>
-      <div class="form-group">
-        <h2>1</h2>
-        <label for="pika kufitare">Pika kufitare</label>
-          <select class="selectpicker">
-            <option>Zgjedh piken kufitare</option>
-            <option>Hani i Elezit</option>
-            <option>Vermice</option>
-            <option>Qafe e Prushit</option>
-            <option>Qafe e Morines</option>
-            <option>Kulle</option>
-            <option>Bernjak</option>
-            <option>Jarinje</option>
-            <option>Merdare</option>
-            <option>Mutivode</option>
-            <option>Dheu i bardhe</option>
-            <option>Mucibabe</option>
-            <option>Glloboqice</option>
-          </select>
-       <h2>2</h2>
-        <p><b>Hyrje</b></p>
-          <div class="form-group">
-             <label for="minuta">Minimum</label>
-             <input type="number">minuta</input><br>
-             <br>
-             <label for="minuta">Maximum</label>
-             <input type="number">minuta</input>
-           </div>
-        <p><b>Dalje</b></p>
-          <div class="form-group">
-             <label for="minuta">Minimum</label>
-             <input type="number">minuta</input><br>
-             <br/>
-             <label for="minuta">Maximum</label>
-             <input type="number">minuta</input>
-           </div>
-      <h2>3</h2>
-       <p><b>Hyrje</b></p>
-          <div class="form-group">
-            <label for="minuta">Minimum</label>
-            <input type="number">metra</input>
-            <br/>
-            <label for="minuta">Maximum</label>
-            <input type="number">metra</input><br>
-          </div>
-       <p><b>Dalje</b></p>
+  <head>
+    <title>Techstitution</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Forma e regjistrimit te pikave kufitare</h3>
+      <form class="form-horizontal" id="border-wait-form">
+        <p>1</p>
+        <hr>
         <div class="form-group">
-            <label for="minuta">Minimum</label>
-            <input type="number">metra</input><br>
-            <br/>
-           <label for="minuta">Maximum</label>
-           <input type="number">metra</input>
-       </div>
-          <br/>
-         <button type="button" class="btn btn-primary">Dergo</button>
-         <button type="button" class="btn btn-primary">Fshij</button>
+          <label for="pika-kufitare" class="control-label col-xs-3">Pika kufitare</label>
+          <div class="col-xs-5">
+            <select class="form-control" id="pika-kufitare">
+              <option><i>Zgjedh piken kufitare</i></option>
+              <option value="Hani i Elezit">Hani i Elezit</option>
+              <option value="Vermice">Vermice</option>
+              <option value="Qafe e Prushit">Qafe e Prushit</option>
+              <option value="Qafe e Morines">Qafe e Morines</option>
+              <option value="Kulle">Kulle</option>
+              <option value=">Bernjak">mBernjak</option>
+              <option value="Jarinje">Jarinje</option>
+              <option value="Merdare">Merdare</option>
+              <option value="Mutivode">Mutivode</option>
+              <option value="Dheu i bardhe">Dheu i bardhe</option>
+              <option value="Mucibabe">Mucibabe</option>
+              <option value="Glloboqice">Glloboqice</option>
+            </select>
+          </div>
+        </div>
+
+        <p>2</p>
+        <hr>
+        <p><b>Hyrje</b></p>
+
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="hyrje-min-minuta">Minimum</label>
+          <div class="col-xs-5">
+            <input class="form-control" type="text" id="hyrje-min-minuta"/>
+          </div>
+          <span style="margin-left:-10px;"> minuta </span>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="hyrje-max-minuta">Maximum</label>
+          <div class="col-xs-5">
+            <input type="text" class="form-control" id="hyrje-max-minuta"/>
+          </div>
+          <span style="margin-left:-10px;"> minuta </span>
+        </div>
+
+        <p><b>Dalje</b></p>
+
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="dalje-min-minuta">Minimum</label>
+          <div class="col-xs-5">
+            <input type="text"class="form-control" id="dalje-min-minuta"/>
+          </div>
+          <span style="margin-left:-10px;"> minuta </span>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="dalje-max-minuta">Maximum</label>
+          <div class="col-xs-5">
+            <input type="text" class="form-control" id="dalje-max-minuta"/>
+          </div>
+          <span style="margin-left:-10px;"> minuta </span>
+        </div>
+
+        <p>3</p>
+        <hr>
+        <p><b>Hyrje</b></p>
+
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="hyrje-min-metra">Minimum</label>
+          <div class="col-xs-5">
+            <input class="form-control" type="text" id="hyrje-min-metra"/>
+          </div>
+          <span style="margin-left:-10px;"> metra </span>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="hyrje-max-metra">Maximum</label>
+          <div class="col-xs-5">
+            <input type="text" class="form-control" id="hyrje-max-metra"/>
+          </div>
+          <span style="margin-left:-10px;"> metra </span>
+        </div>
+
+        <p><b>Dalje</b></p>
+
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="dalje-min-metra">Minimum</label>
+          <div class="col-xs-5">
+            <input class="form-control" type="text" id="dalje-min-metra"/>
+          </div>
+          <span style="margin-left:-10px;"> metra </span>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="dalje-max-metra">Maximum</label>
+          <div class="col-xs-5">
+            <input type="text" class="form-control" id="dalje-max-metra"/>
+          </div>
+          <span style="margin-left:-10px;"> metra </span>
+        </div>
+
+        <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-10">
+          <button type="submit" class="btn btn-default">Dergo</button>
+        </div>
       </div>
     </div>
   </form>
+  </div>
 </body>
 </html>
