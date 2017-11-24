@@ -12,9 +12,11 @@
     <div class="container">
       <h3>Forma e regjistrimit te pikave kufitare</h3>
       <form class="form-horizontal" id="border-wait-form">
+
+      <input type="hidden" id="datetime-now"/>
         <p>1</p>
         <hr>
-        <div class="form-group">
+        <div class="form-group form-style-group">
           <label for="pika-kufitare" class="control-label col-xs-3">Pika kufitare</label>
           <div class="col-xs-5">
             <select class="form-control" id="pika-kufitare">
@@ -42,7 +44,7 @@
         <div class="form-group">
           <label class="control-label col-xs-3" for="hyrje-min-minuta">Minimum</label>
           <div class="col-xs-5">
-            <input class="form-control" type="text" id="hyrje-min-minuta"/>
+            <input class="form-control" type="number" min="0" max="59" id="hyrje-min-minuta"/>
           </div>
           <span style="margin-left:-10px;"> minuta </span>
         </div>
@@ -50,7 +52,7 @@
         <div class="form-group">
           <label class="control-label col-xs-3" for="hyrje-max-minuta">Maximum</label>
           <div class="col-xs-5">
-            <input type="text" class="form-control" id="hyrje-max-minuta"/>
+            <input class="form-control" type="number" min="0" max="59" id="hyrje-max-minuta"/>
           </div>
           <span style="margin-left:-10px;"> minuta </span>
         </div>
@@ -60,7 +62,7 @@
         <div class="form-group">
           <label class="control-label col-xs-3" for="dalje-min-minuta">Minimum</label>
           <div class="col-xs-5">
-            <input type="text"class="form-control" id="dalje-min-minuta"/>
+            <input class="form-control" type="number" min="0" max="59" id="dalje-min-minuta"/>
           </div>
           <span style="margin-left:-10px;"> minuta </span>
         </div>
@@ -68,7 +70,7 @@
         <div class="form-group">
           <label class="control-label col-xs-3" for="dalje-max-minuta">Maximum</label>
           <div class="col-xs-5">
-            <input type="text" class="form-control" id="dalje-max-minuta"/>
+            <input class="form-control" type="number" min="0" max="59" id="dalje-max-minuta"/>
           </div>
           <span style="margin-left:-10px;"> minuta </span>
         </div>
@@ -80,7 +82,7 @@
         <div class="form-group">
           <label class="control-label col-xs-3" for="hyrje-min-metra">Minimum</label>
           <div class="col-xs-5">
-            <input class="form-control" type="text" id="hyrje-min-metra"/>
+            <input class="form-control" type="number" min="0" id="hyrje-min-metra"/>
           </div>
           <span style="margin-left:-10px;"> metra </span>
         </div>
@@ -88,7 +90,7 @@
         <div class="form-group">
           <label class="control-label col-xs-3" for="hyrje-max-metra">Maximum</label>
           <div class="col-xs-5">
-            <input type="text" class="form-control" id="hyrje-max-metra"/>
+            <input class="form-control" type="number" min="0" id="hyrje-max-metra"/>
           </div>
           <span style="margin-left:-10px;"> metra </span>
         </div>
@@ -98,7 +100,7 @@
         <div class="form-group">
           <label class="control-label col-xs-3" for="dalje-min-metra">Minimum</label>
           <div class="col-xs-5">
-            <input class="form-control" type="text" id="dalje-min-metra"/>
+            <input class="form-control" type="number" min="0" id="dalje-min-metra"/>
           </div>
           <span style="margin-left:-10px;"> metra </span>
         </div>
@@ -106,16 +108,16 @@
         <div class="form-group">
           <label class="control-label col-xs-3" for="dalje-max-metra">Maximum</label>
           <div class="col-xs-5">
-            <input type="text" class="form-control" id="dalje-max-metra"/>
+            <input class="form-control" type="number" min="0" id="dalje-max-metra"/>
           </div>
           <span style="margin-left:-10px;"> metra </span>
         </div>
 
         <div class="form-group">
-        <div class="col-xs-offset-3 col-xs-10">
-          <button type="submit" class="btn btn-default">Dergo</button>
+          <div class="col-xs-offset-3 col-xs-10">
+            <button type="submit" class="btn btn-default">Dergo</button>
+          </div>
         </div>
-      </div>
     </div>
   </form>
   </div>
